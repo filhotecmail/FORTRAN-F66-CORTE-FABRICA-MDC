@@ -45,7 +45,9 @@ PROGRAM CORTAR_CHAPAS
           MODULEMDC = T
           EXIT ! Se chegar aqui eu saio do loop se não isso aqui vai entrar em um loop infinito.
        END IF 
-        T = T - 1;  ! Eu tive que decrementar o valor e menos um a cada iteração porque o loop tava sendo infinito.
+        T = T - 1;  ! Eu tive que decrementar o valor e menos um a cada iteração porque o loop tava sendo infinito,
+                    ! Eu estou fazendo a ordem inversa como o professor ensinou, Encontrar na matematica o maior dividor entre todos 
+                    ! e o loop para se for 0 , ou seja , do maior até 0, quando não encontrar mais nenhum divisor entre todos.
       END DO  
      
     END FUNCTION MODULEMDC
