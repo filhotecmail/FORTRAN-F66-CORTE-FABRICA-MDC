@@ -1,3 +1,6 @@
+![image](https://github.com/filhotecmail/FORTRAN-F66-CORTE-FABRICA-MDC/assets/18727307/7187b38a-9bf9-4d6a-91fa-6bc3951388dc)
+
+
 # FORTRAN-F66-CORTE-FABRICA-MDC
 Repositório criado para complementar o estudo da matemática básica, exemplificando questões de provas lógicas em fortran, para reforçar o estudo da matemática.
 
