@@ -4,6 +4,27 @@
 # FORTRAN-F66-CORTE-FABRICA-MDC
 Repositório criado para complementar o estudo da matemática básica, exemplificando questões de provas lógicas em fortran, para reforçar o estudo da matemática.
 
+## Ambiente de Desenvolvimento
+
+- Imagem base: Sistema Operacional Linux Ubuntu
+- Compilador: gfortran
+- Versão: Fortran F66
+
+## Instruções
+
+Para compilar o código-fonte, utilize o seguinte comando:
+
+```bash
+gfortran -o q1mdc q1mdc.f90
+```
+
+Após compilar com sucesso, execute o programa com o comando:
+
+   ```bash
+   ./q1mdc
+   ```       
+
+
 # Problema Matemático: Divisão de Chapas em Partes Iguais
 
 ## Descrição do Problema
