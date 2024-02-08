@@ -13,9 +13,6 @@ Repositório criado para complementar o estudo da matemática básica, exemplifi
 
 ## Instruções
 
-### Crie o Dockerfile
-Copie o conteúdo fornecido e cole em um arquivo chamado Dockerfile.
-
 ### Construa a imagem Docker
 No terminal, navegue até o diretório onde o Dockerfile está localizado e execute o seguinte comando para construir a imagem Docker:
 
