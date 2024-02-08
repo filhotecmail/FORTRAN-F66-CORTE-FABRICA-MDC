@@ -25,7 +25,7 @@ PROGRAM CORTAR_CHAPAS
     CONTAINS
 
     INTEGER FUNCTION MODULEMDC( A,B,C )
-     INTEGER :: A,B,CA
+     INTEGER :: A,B,C
      INTEGER :: T
 
       ! Bom seguindo a lógica do professor, na matéria, valor de T, nesse caso pode ser 
@@ -35,9 +35,15 @@ PROGRAM CORTAR_CHAPAS
       T = MIN( B,C )
      
      DO WHILE ( T .NE. 0 )
-       IF () THEN
-       END IF
-       T
+      ! Aqui eu vou vou verificar se o resto da divisão, produto da função módulo são zero , se for significa que t é um divisor comum a esses 3 números.
+      ! Se for então ele é um MDC de A, B e C.
+      ! Devolvo o valor para a variável t e depois eu atribuo ela ao retorno da unção
+       IF ( MODULO( A, T ) == 0 .AND. MODULO( B, T ) == 0 .AND. MODULO( C, T ) == 0) THEN
+          MODULEMDC = T
+          EXIT ! Se chegar aqui eu saio do loop se não isso aqui vai entrar em um loop infinito.
+       END IF   
+      END DO  
+     
     END FUNCTION MODULEMDC
 
 
