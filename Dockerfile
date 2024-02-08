@@ -8,3 +8,12 @@ RUN apt-get update && \
 
 # Defina o diretório de trabalho como /workspace
 WORKDIR /workspace
+
+# Copie o código-fonte Fortran para o diretório de trabalho
+COPY q1mdc.f90 .
+
+# Compile o código-fonte Fortran com gfortran
+RUN gfortran -o q1mdc q1mdc.f90
+
+# Label para o comando de execução
+LABEL execute="./q1mdc"
