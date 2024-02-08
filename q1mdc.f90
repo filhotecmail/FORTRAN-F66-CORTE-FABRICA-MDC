@@ -17,5 +17,22 @@ PROGRAM CORTAR_CHAPAS
     WRITE (*, *) 'de aço de 7896 metros quadrados em partes iguais, no maior tamanho possível e em proporção.'
     WRITE (*, *) 'Quantos pedaços foram cortados e em quantos metros?'
     WRITE (*, *) '' 
+    WRITE (*, *) 'MDC UTILIZADO:', MDC_ABC, ' METROS QUADRADOS.'
+    WRITE (*, *) CA / MDC_ABC, ' PEDAÇOS DE METAL      ', MDC_ABC, ' METROS QUADRADOS CADA UM.'
+    WRITE (*, *) CB / MDC_ABC, ' PEDAÇOS DE ALUMINIO   ', MDC_ABC, ' METROS QUADRADOS CADA UM.'
+    WRITE (*, *) CC / MDC_ABC, ' PEDAÇOS DE MADEIRA    ', MDC_ABC, ' METROS QUADRADOS CADA UM.'
+
+    CONTAINS
+
+    INTEGER FUNCTION MODULEMDC( A,B,C )
+     INTEGER :: A,B,CA
+     INTEGER :: T
+     
+     DO WHILE ( T .NE. 0 )
+       IF () THEN
+       END IF
+       T
+    END FUNCTION MODULEMDC
+
 
 END PROGRAM CORTAR_CHAPAS
