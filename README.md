@@ -25,3 +25,10 @@ Passos para encontrar o MDC de três números:
 
 Após encontrar o MDC, podemos determinar quantos pedaços foram cortados e em quantos metros cada pedaço mede dividindo as dimensões das chapas pelo MDC.
 
+![image](https://github.com/filhotecmail/FORTRAN-F66-CORTE-FABRICA-MDC/assets/18727307/a47f79da-b051-4705-a141-85fbbe0ff9f8)
+
+![image](https://github.com/filhotecmail/FORTRAN-F66-CORTE-FABRICA-MDC/assets/18727307/951e8e7c-9371-4f9e-a2de-01279a5e7bf5)
+
+
+
+
