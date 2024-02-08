@@ -18,4 +18,5 @@ PROGRAM CORTAR_CHAPAS
     WRITE (*, *) 'Quantos pedaços foram cortados e em quantos metros?'
     WRITE (*, *) '' 
 
+
 END PROGRAM CORTAR_CHAPAS
