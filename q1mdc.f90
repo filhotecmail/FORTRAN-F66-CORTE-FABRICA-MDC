@@ -9,6 +9,8 @@ PROGRAM CORTAR_CHAPAS
     CB = 3520 
     CC = 7896  
 
+    MDC_ABC = MODULEMDC(CA, CB, CC)
+
     WRITE (*,*) 'PROGRAMA CORDE DE CHAPAS PROPORCIONAIS'
     WRITE (*, *) 'ANALISTA: CARLOS DIAS'
     WRITE (*, *) 'DATA: 2024/07/02'
@@ -25,7 +27,7 @@ PROGRAM CORTAR_CHAPAS
 
     CONTAINS
 
-    INTEGER FUNCTION MODULEMDC( A,B,C )
+    INTEGER FUNCTION MODULEMDC( A,B,C ) 
      INTEGER :: A,B,C
      INTEGER :: T
 
@@ -42,7 +44,8 @@ PROGRAM CORTAR_CHAPAS
        IF ( MODULO( A, T ) == 0 .AND. MODULO( B, T ) == 0 .AND. MODULO( C, T ) == 0) THEN
           MODULEMDC = T
           EXIT ! Se chegar aqui eu saio do loop se não isso aqui vai entrar em um loop infinito.
-       END IF   
+       END IF 
+        T = T - 1;  ! Eu tive que decrementar o valor e menos um a cada iteração porque o loop tava sendo infinito.
       END DO  
      
     END FUNCTION MODULEMDC
