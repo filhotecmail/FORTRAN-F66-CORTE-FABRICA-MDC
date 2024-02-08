@@ -27,6 +27,12 @@ PROGRAM CORTAR_CHAPAS
     INTEGER FUNCTION MODULEMDC( A,B,C )
      INTEGER :: A,B,CA
      INTEGER :: T
+
+      ! Bom seguindo a lógica do professor, na matéria, valor de T, nesse caso pode ser 
+      ! definido como mínimo entre B e C, já que a gente nós estamos procurando máximo divisor comum entre os 3 números
+      ! Se o número divide a vírgula PEC, então ele também divide os 2 números menores de A, B e C.
+      ! Então a gente pode fazer o seguinte economizar tempo já pegando um mínimo entre o B e C .
+      T = MIN( B,C )
      
      DO WHILE ( T .NE. 0 )
        IF () THEN
