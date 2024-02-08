@@ -4,6 +4,7 @@ PROGRAM CORTAR_CHAPAS
     INTEGER :: CA, CB, CC
     INTEGER :: MDC_ABC
 
+    MDC_ABC = 0
     CA = 1520 
     CB = 3520 
     CC = 7896  
