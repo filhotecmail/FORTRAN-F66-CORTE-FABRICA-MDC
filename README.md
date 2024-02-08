@@ -10,7 +10,25 @@ Repositório criado para complementar o estudo da matemática básica, exemplifi
 - Compilador: gfortran
 - Versão: Fortran F66
 
+
 ## Instruções
+
+### Crie o Dockerfile
+Copie o conteúdo fornecido e cole em um arquivo chamado Dockerfile.
+
+### Construa a imagem Docker
+No terminal, navegue até o diretório onde o Dockerfile está localizado e execute o seguinte comando para construir a imagem Docker:
+
+```bash
+docker build -t meu_fortran .
+```
+
+## Execute o contêiner Docker
+Depois que a imagem for construída com sucesso, você pode executar um contêiner Docker a partir dela usando o seguinte comando:
+
+```bash
+docker run -it --rm meu_fortran
+```
 
 Para compilar o código-fonte, utilize o seguinte comando:
 
@@ -23,7 +41,6 @@ Após compilar com sucesso, execute o programa com o comando:
    ```bash
    ./q1mdc
    ```       
-
 
 # Problema Matemático: Divisão de Chapas em Partes Iguais
 
